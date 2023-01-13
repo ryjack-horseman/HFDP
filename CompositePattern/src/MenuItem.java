@@ -1,8 +1,14 @@
+import java.util.Iterator;
+
 public class MenuItem extends MenuComponent{
     String name;
     String description;
     boolean vegetarian;
     double price;
+
+    public Iterator<MenuComponent> createIterator() {
+        return new NullIterator();
+    }
 
     public MenuItem(String name, String description, boolean vegetarian, double price) {
         this.name = name;
