@@ -35,7 +35,7 @@ public class Menu extends MenuComponent{
 
     @Override
     public void print() {
-        System.out.println("\n" + getName());
+        System.out.print("\n" + getName());
         System.out.println(",   " + getDescription());
         System.out.println("-----------------------");
 
