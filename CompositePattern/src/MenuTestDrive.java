@@ -31,6 +31,6 @@ public class MenuTestDrive {
         //more menuItems here
 
         Waitress waitress = new Waitress(allMenus);
-        waitress.printMenu();
+        waitress.printVegetarianMenu();
     }
 }
