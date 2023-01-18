@@ -13,4 +13,8 @@ public class Duck {
     public void display() {
 
     }
+
+    public void fly() {
+
+    }
 }
