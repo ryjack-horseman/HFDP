@@ -5,7 +5,7 @@ public class Duck {
 
     }
     public void performQuack(){
-
+        quackBehavior.quack();
     }
 
     public void swim() {
