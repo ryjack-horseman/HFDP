@@ -8,4 +8,9 @@ public class RubberDuck extends Duck{
     public void display() {
         //looks like a rubber duck
     }
+
+    @Override
+    public void fly() {
+        //we could override this to do nothing
+    }
 }
