@@ -1,8 +1,10 @@
 public class Duck {
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
     public Duck(){
 
     }
-    public void quack(){
+    public void performQuack(){
 
     }
 
@@ -14,7 +16,7 @@ public class Duck {
 
     }
 
-    public void fly() {
+    public void performFly() {
 
     }
 }

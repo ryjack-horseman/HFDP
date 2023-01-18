@@ -1,6 +1,6 @@
 public class DecoyDuck extends Duck{
     @Override
-    public void quack() {
+    public void performQuack() {
         //does nothing
     }
 
@@ -10,7 +10,7 @@ public class DecoyDuck extends Duck{
     }
 
     @Override
-    public void fly() {
+    public void performFly() {
         // do nothing
     }
 }

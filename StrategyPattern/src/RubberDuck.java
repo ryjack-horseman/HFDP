@@ -1,6 +1,6 @@
 public class RubberDuck extends Duck{
     @Override
-    public void quack() {
+    public void performQuack() {
         //overridden to squeak
     }
 
@@ -10,7 +10,7 @@ public class RubberDuck extends Duck{
     }
 
     @Override
-    public void fly() {
+    public void performFly() {
         //we could override this to do nothing
     }
 }
