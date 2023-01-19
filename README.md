@@ -3,4 +3,5 @@ This is my code repository while I work through the book: Head First Design Patt
 development should be encompassed by the commit messages throughout. I will update this README as I finish each section:
 
 Chapter 8: Iterator Pattern
+
 Chapter 8: Composite Pattern
