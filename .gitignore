@@ -1,0 +1,12 @@
+
+*.class
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+CompositePattern/CompositePattern.iml
+*.iml
+IteratorPattern/.idea/misc.xml
+IteratorPattern/.idea/modules.xml
+IteratorPattern/.idea/vcs.xml
+IteratorPattern/.idea/workspace.xml
