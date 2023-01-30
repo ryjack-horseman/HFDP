@@ -1,6 +1,6 @@
 public class FlyNoWay implements FlyBehavior{
     @Override
     public void fly() {
-        //can't fly
+        System.out.println("I can't fly");
     }
 }
