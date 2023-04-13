@@ -1,18 +1,23 @@
-public class ForecastDisplay implements Observer, DisplayElement {
+import java.util.Observable;
+import java.util.Observer;
+
+public class ForecastDisplay implements Observer, DisplayElement{
     private float currentPressure = 29.92f;
     private float lastPressure;
-    private WeatherData weatherData;
+    private Observable observable;
 
-    public ForecastDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+    public ForecastDisplay(Observable observable) {
+        this.observable = observable;
+        observable.addObserver(this);
     }
 
-    public void update(float temp, float humidity, float pressure) {
-        lastPressure = currentPressure;
-        currentPressure = pressure;
-
-        display();
+    public void update(Observable obs, Object arg) {
+        if(obs instanceof WeatherData){
+            WeatherData weatherData = (WeatherData) obs;
+            this.lastPressure = currentPressure;
+            currentPressure = weatherData.getPressure();
+            display();
+        }
     }
 
     public void display() {
